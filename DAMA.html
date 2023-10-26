@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DAMA2</title>
+  </head>
+  <body>
+    <p class="menu">GUIA</p>
+    <div class="rulesbg">
+      <div class="rules">
+        <h3>X</h3>
+        <h1>Bem Vindo(a) ao jogo de Dama</h1>
+        <h4>Esse jogo trabalhará matematica com o conceito de MARGIN!</h4>
+        <h2>Funcionamento do jogo:</h2>
+        <ul>
+          <li>Peças Pretas para avancar adcionam um "margin-top"</li>
+          <li>Peças Brancas para avancar adcionam um "margin-bottom"</li>
+          <li>
+            Peças Pretas para andar para a DIREITA adcionam um "margin-left"
+            POSITIVO
+          </li>
+          <li>
+            Peças Pretas para andar para a ESQUERDA adcionam um "margin-left"
+            NEGATIVO
+          </li>
+          <li>
+            Peças Brancas para andar para a DIREITA adcionam um "margin-right"
+            NEGATIVO
+          </li>
+          <li>
+            Peças Brancas para andar para a ESQUERDA adcionam um "margin-right"
+            POSITIVO
+          </li>
+          <li>
+            O tabuleiro tem 8/8 de tamanho, com cada casa tendo 80px de largura
+            e altura
+          </li>
+        </ul>
+        <h2>Regras do jogo:</h2>
+        <ul>
+          <li>Cada jogador tem direito a apenas uma jogada.</li>
+          <li>As peças só podem ser movidas para frente (exeto as damas).</li>
+          <li>
+            As peças só podem andar uma casa para frente por vez (exeto as
+            damas).
+          </li>
+          <li>
+            Única condição para a peça mover para o lado, e pular mais de uma
+            casa, é para "comer" a(s) peça(s) adversária(s).
+          </li>
+          <li>
+            "Comer" a peça para trás vale apenas em combos(mais de 1 peça de uma
+            vez) e sendo a primeira para frente.
+          </li>
+          <li>Ao fazer um combo você deve mover a peça ao detino final.</li>
+          <li>
+            Ao ter uma peça "comida", o jogador que perdeu a peça deverá
+            retira-la do tabuleiro (peças brancas a direta e peças pretas a
+            esquerda)
+          </li>
+          <li>Uma peça vira dama ao chegar do outro lado do tabuleiro</li>
+        </ul>
+      </div>
+    </div>
+    <div class="game">
+      <div class="tabuleiro">
+        <div class="colImpar col1">
+          <div class="brancos">
+            <div id="p1" class="soldadoPreto">P1</div>
+          </div>
+          <div class="pretos"></div>
+          <div class="brancos">
+            <div id="p2" class="soldadoPreto">P2</div>
+          </div>
+          <div class="pretos"></div>
+          <div class="brancos"></div>
+          <div class="pretos">
+            <div id="b1" class="soldadoBranco">B1</div>
+          </div>
+          <div class="brancos"></div>
+          <div class="pretos">
+            <div id="b2" class="soldadoBranco">B2</div>
+          </div>
+        </div>
+
+        <div class="colPar col2">
+          <div class="brancos"></div>
+          <div class="pretos">
+            <div id="b3" class="soldadoBranco">B3</div>
+          </div>
+          <div class="brancos"></div>
+          <div class="pretos"></div>
+          <div class="brancos"></div>
+          <div class="pretos"></div>
+          <div class="brancos">
+            <div id="p3" class="soldadoPreto">P3</div>
+          </div>
+          <div class="pretos"></div>
+        </div>
+
+        <div class="colImpar col3">
+          <div class="brancos">
+            <div id="p4" class="soldadoPreto">P4</div>
+          </div>
+          <div class="pretos"></div>
+          <div class="brancos">
+            <div id="p5" class="soldadoPreto">P5</div>
+          </div>
+          <div class="pretos"></div>
+          <div class="brancos"></div>
+          <div class="pretos">
+            <div id="b4" class="soldadoBranco">B4</div>
+          </div>
+          <div class="brancos"></div>
+          <div class="pretos">
+            <div id="b5" class="soldadoBranco">B5</div>
+          </div>
+        </div>
+
+        <div class="colPar col4">
+          <div class="brancos"></div>
+          <div class="pretos">
+            <div id="b6" class="soldadoBranco">B6</div>
+          </div>
+          <div class="brancos"></div>
+          <div class="pretos"></div>
+          <div class="brancos"></div>
+          <div class="pretos"></div>
+          <div class="brancos">
+            <div id="p6" class="soldadoPreto">P6</div>
+          </div>
+          <div class="pretos"></div>
+        </div>
+
+        <div class="colImpar col5">
+          <div class="brancos">
+            <div id="p7" class="soldadoPreto">P7</div>
+          </div>
+          <div class="pretos"></div>
+          <div class="brancos">
+            <div id="p8" class="soldadoPreto">P8</div>
+          </div>
+          <div class="pretos"></div>
+          <div class="brancos"></div>
+          <div class="pretos">
+            <div id="b7" class="soldadoBranco">B7</div>
+          </div>
+          <div class="brancos"></div>
+          <div class="pretos">
+            <div id="b8" class="soldadoBranco">B8</div>
+          </div>
+        </div>
+
+        <div class="colPar col6">
+          <div class="brancos"></div>
+          <div class="pretos">
+            <div id="b9" class="soldadoBranco">B9</div>
+          </div>
+          <div class="brancos"></div>
+          <div class="pretos"></div>
+          <div class="brancos"></div>
+          <div class="pretos"></div>
+          <div class="brancos">
+            <div id="p9" class="soldadoPreto">P9</div>
+          </div>
+          <div class="pretos"></div>
+        </div>
+
+        <div class="colImpar col7">
+          <div class="brancos">
+            <div id="p10" class="soldadoPreto">P10</div>
+          </div>
+          <div class="pretos"></div>
+          <div class="brancos">
+            <div id="p11" class="soldadoPreto">P11</div>
+          </div>
+          <div class="pretos"></div>
+          <div class="brancos"></div>
+          <div class="pretos">
+            <div id="b10" class="soldadoBranco">B10</div>
+          </div>
+          <div class="brancos"></div>
+          <div class="pretos">
+            <div id="b11" class="soldadoBranco">B11</div>
+          </div>
+        </div>
+
+        <div class="colPar col8">
+          <div class="brancos"></div>
+          <div class="pretos">
+            <div id="b12" class="soldadoBranco">B12</div>
+          </div>
+          <div class="brancos"></div>
+          <div class="pretos"></div>
+          <div class="brancos"></div>
+          <div class="pretos"></div>
+          <div class="brancos">
+            <div id="p12" class="soldadoPreto">P12</div>
+          </div>
+          <div class="pretos"></div>
+        </div>
+      </div>
+
+      <div class="controle">
+        <div class="pecaP">
+          <div class="opc">
+            <label for="pecaPreta">Escolha a peça</label>
+            <br />
+            <input placeholder="Escolha a peça preta" type="text" id="pecaPreta" />
+          </div>
+
+          <button id="frenteP">Para Frente</button>
+          <button id="trasP">Para Trás</button>
+          <button id="direitaP">Para Direita</button>
+          <button id="esquerdaP">Para Esquerda</button>
+
+        <br />
+
+        <div class="pecaB">
+          <div class="opc">
+            <label for="pecaBranca">Escolha a peça</label>
+            <br />
+            <input placeholder="Escolha a peça branca" type="text" id="pecaBranca" />
+          </div>
+
+          <button id="frenteB">Para Frente</button>
+          <button id="trasB">Para Trás</button>
+          <button id="direitaB">Para Direita</button>
+          <button id="esquerdaB">Para Esquerda</button>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
